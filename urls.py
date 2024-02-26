@@ -17,6 +17,8 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from . import views
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -33,4 +35,4 @@ urlpatterns = [
     path('uxui/', views.uxui, name='uxui'),
     path('webDev/', views.webDev, name='webDev'),
     path('404/', views.page_not_found, name='404'),
-]
+]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
