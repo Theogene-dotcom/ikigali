@@ -1,4 +1,3 @@
-{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,25 +14,25 @@
 	<title>Kigali Coding</title>
 
 	<!-- Custom Stylesheet -->
-	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+	<link rel="stylesheet" href="static/css/style.css">
 	<!-- Bootstrap5 Css -->
-	<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+	<link rel="stylesheet" href="static/css/bootstrap.min.css">
 	<!-- Box icons CSS -->
-	<link rel="stylesheet" href="{% static 'font/bootstrap-icons.css' %}">
+	<link rel="stylesheet" href="static/font/bootstrap-icons.css">
 
 	<!-- SEO Optimization -->
 	<meta name="description"
-		content="CODE HUNT’S is a dedicated team of passionate developers based in Islamabad, Pakistan.">
-	<meta name="keywords" content="Software Company, codehunts, codehunt, bootstrap5, ">
-	<meta name="author" content="Muhammad Naveed">
+		content="Kigali Coding is a dedicated team of passionate developers based in Islamabad, Pakistan.">
+	<meta name="keywords" content="Software Company, PC Select ltd, Kigali, Rwanda. ">
+	<meta name="author" content="Musengimana Theogene">
 
 	<!-- logo -->
-	<link rel="icon" href="{% static 'assets/favicon.ico' %}">
+	<link rel="icon" href="static/assets/favicon.ico">
 
-	<link rel="apple-touch-icon" sizes="180x180" href="{% static 'assets/apple-touch-icon.png' %}">
-	<link rel="icon" type="image/png" sizes="32x32" href="{% static 'assets/favicon-32x32.png' %}">
-	<link rel="icon" type="image/png" sizes="16x16" href="{% static 'assets/favicon-16x16.png' %}">
-	<link rel="manifest" href="{% static 'assets/site.webmanifest' %}">
+	<link rel="apple-touch-icon" sizes="180x180" href="static/assets/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="static/assets/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="static/assets/favicon-16x16.png">
+	<link rel="manifest" href="static/assets/site.webmanifest">
 
 	<!-- animation JS -->
 	<script defer src="./js/animate.js"></script>
@@ -43,8 +42,8 @@
 	<!-- Nav Bar -->
 	<nav class="navbar navbar-expand-lg fixed-top navbar-light bg-blur ">
 		<div class="container">
-			<a class="navbar-brand" href="{% url 'index' %}">
-				<img src="{% static 'assets/pcslogo.png' %}" alt="" class="me-3" alt="" height="60px">
+			<a class="navbar-brand" href="index.html">
+				<img src="static/assets/pcslogo.png" alt="" class="me-3" alt="" height="60px">
 			</a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
 				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -54,7 +53,7 @@
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav ms-auto">
 					<li class="nav-item">
-						<a class="nav-link" aria-current="page" href="{% url 'index' %}">Home</a>
+						<a class="nav-link" aria-current="page" href="index.html">Home</a>
 					</li>
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -68,16 +67,16 @@
 						</ul>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link active" href="{% url 'portfolio' %}">Projects</a>
+						<a class="nav-link active" href="portfolio.html">Projects</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="{% url 'team' %}">Our Team</a>
+						<a class="nav-link" href="team.html">Our Team</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="{% url 'about' %}">About Us</a>
+						<a class="nav-link" href="about.html">About Us</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="{% url 'contact' %}">Contact</a>
+						<a class="nav-link" href="contact.html">Contact</a>
 					</li>
 				</ul>
 			</div>
@@ -328,12 +327,12 @@
 				<div class="col-lg-3 col-md-6 footer-links">
 					<h5>Useful Links</h5>
 					<ul class="list-unstyled lnk">
-						<li class="mb-2"><a href="{% url 'index' %}"><i class="bi-link"></i> Home</a></li>
-						<li class="mb-2"><a href={% url 'team' %}"><i class="bi-link"></i> Our Team</a></li>
-						<li class="mb-2"><a href="{% url 'about' %}"><i class="bi-link"></i> About us</a></li>
-						<li class="mb-2"><a href="{% url 'contact' %}"><i class="bi-link"></i> Contact us</a></li>
-						<li class="mb-2"><a href="{% url 'hiring' %}"><i class="bi-link"></i> Carrers</a></li>
-						<li class="mb-2"><a href="{% url 'learning' %}"><i class="bi-link"></i> Learning</a></li>
+						<li class="mb-2"><a href="index.html"><i class="bi-link"></i> Home</a></li>
+						<li class="mb-2"><a href="team.html"><i class="bi-link"></i> Our Team</a></li>
+						<li class="mb-2"><a href="about.html"><i class="bi-link"></i> About us</a></li>
+						<li class="mb-2"><a href="contact.html"><i class="bi-link"></i> Contact us</a></li>
+						<li class="mb-2"><a href="hiring.html"><i class="bi-link"></i> Carrers</a></li>
+						<li class="mb-2"><a href="learning.html"><i class="bi-link"></i> Learning</a></li>
 					</ul>
 				</div>
 
@@ -341,16 +340,13 @@
 				<div class="col-lg-3 col-md-6 footer-links">
 					<h5>Our Services</h5>
 					<ul class="list-unstyled lnk">
-						<li class="mb-2"><a href="{% url 'webDev' %}"><i class="bi-link"></i> Bootstrap5</a></li>
-						<li class="mb-2"><a href="{% url 'webDev' %}"><i class="bi-link"></i> WordPress</a></li>
-						<li class="mb-2"><a href="{% url 'appDev' %}"><i class="bi-link"></i> Windows apps</a></li>
-						<li class="mb-2"><a href="{% url 'appDev' %}"><i class="bi-link"></i> Android apps</a>
+						<li class="mb-2"><a href="contact.html"><i class="bi-link"></i>Desktop application</a></li>
+						<li class="mb-2"><a href="webDev.html"><i class="bi-link"></i>Web Application</a></li>
+						<li class="mb-2"><a href="appDev.html"><i class="bi-link"></i> Mobile Application</a></li>
+						<li class="mb-2"><a href="appDev.html"><i class="bi-link"></i>Embedded Systems</a>
 						</li>
-						<li class="mb-2"><a href="{% url 'appDev' %}"><i class="bi-link"></i> IOS apps</a></li>
-						<li class="mb-2"><a href="{% url 'uxui' %}"><i class="bi-link"></i> UX/UI Designing</a></li>
-						<li class="mb-2"><a href="{% url 'uxui' %}"><i class="bi-link"></i> Graphics Designing</a>
-						</li>
-						<li class="mb-2"><a href="{% url 'uxui' %}"><i class="bi-link"></i> Logo Designing</a></li>
+						<li class="mb-2"><a href="uxui.html"><i class="bi-link"></i> UX/UI Designing</a></li>
+						<li class="mb-2"><a href="appDev.html"><i class="bi-link"></i>IT Support and Consultant</a></li>
 					</ul>
 				</div>
 
@@ -377,7 +373,7 @@
 	<!-- Privacy Notice -->
 	<div class="footer  py-3 bg-dark text-light">
 		<div class="container mt-3">
-			<p>© 2024 PC Select Ltd <a href="{% url 'terms' %}" target="_blank" class="text-light">Terms & Conditions</a></p>
+			<p>© 2024 PC Select Ltd <a href="terms.html" target="_blank" class="text-light">Terms & Conditions</a></p>
 		</div>
 	</div>
 
