@@ -22,7 +22,7 @@
 
 <link rel="stylesheet" href="static/font/bootstrap-icons.css">
        
-    <link rel="manifest" href="{% static 'site.webmanifest' %}">
+    <link rel="manifest" href="static/site.webmanifest">
 
 
 	<!-- SEO Optimization -->
@@ -39,7 +39,7 @@
 	<link rel="manifest" href="static/assets/site.webmanifest">
 
 	<!-- Animate JS -->
-	<script defer src="{% static 'js/animate.js' %}"></script>
+	<script defer src="static/js/animate.js"></script>
 </head>
 
 <body>
@@ -47,8 +47,8 @@
 	<nav class="navbar navbar-expand-lg fixed-top navbar-light bg-blur">
 		<div class="container col-xxl-8">
 			
-			<a class="navbar-brand" href="{% url 'index' %}">
-				<img src="{% static 'assets/pcslogo.jpg' %}" alt="code hunts logo" class="" alt="" height="60px" loading="lazy" />
+			<a class="navbar-brand" href="index.html">
+				<img src="static/assets/pcslogo.jpg" alt="code hunts logo" class="" alt="" height="60px" loading="lazy" />
 			</a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
 				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -66,9 +66,9 @@
 							Services
 						</a>
 						<ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="padding: 4px;">
-							<li><a class="dropdown-item" href="{% url 'webDev' %}">Web Development</a></li>
-							<li><a class="dropdown-item" href="{% url 'appDev' %}">App Development</a></li>
-							<li><a class="dropdown-item" href="{% url 'uxui' %}">Graphics Designing</a></li>
+							<li><a class="dropdown-item" href="webDev.html">Web Development</a></li>
+							<li><a class="dropdown-item" href="appDev.html">App Development</a></li>
+							<li><a class="dropdown-item" href="uxui.html">Graphics Designing</a></li>
 						</ul>
 					</li>
 					<li class="nav-item">
@@ -93,7 +93,7 @@
 		<div
 			class="row flex-lg-row-reverse align-items-center py-5 justify-content-center justify-content-lg-between mt-5">
 			<div class="col-10 col-sm-8 col-lg-5">
-				<img src="{% static 'assets/hero_img.png' %}" class="img-fluid" alt="hero img iphone pic" width="700" height="500"
+				<img src="static/assets/hero_img.png" class="img-fluid" alt="hero img iphone pic" width="700" height="500"
 					loading="lazy">
 			</div>
 			<div class="col-lg-6 ">
